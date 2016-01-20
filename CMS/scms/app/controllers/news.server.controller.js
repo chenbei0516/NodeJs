@@ -35,7 +35,7 @@ module.exports = {
 			if(err){
 				return next(err);
 			}
-			if(doc){
+			if(!doc){
 				return next(new Error('News not Found'));
 			}
 			req.news = doc;
