@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/SCNJHomeTemplate.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="UTF-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>四川能级科技有限公司</title>
+    <!-- InstanceEndEditable -->
+    <link href="stylesheets/css.css" rel="stylesheet" type="text/css" />
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+<div class="container" ng-app="aboutus" ng-controller="AboutUsController">
+    <header>
+        <div id="logo"></div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">首  页</a></li>
+            <li><a href="#">关于我们</a>
+                <ul class="sub_nav">
+                    <!-- <li><a href="#"><span>公司简介</span></a></li>
+                    <li><a href="#"><span>企业理念</span></a></li>
+                    <li><a href="#"><span>荣誉资质</span></a></li>
+                    <li><a href="#"><span>联系我们</span></a></li> -->
+                    <li ng-repeat="aboutus in list"><a href="#"><span>{{aboutus}}</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">新闻资讯</a>
+                <ul class="sub_nav">
+                    <li><a href="#"><span>证词法规</span></a></li>
+                    <li><a href="#"><span>行业新闻</span></a></li>
+                    <li><a href="#"><span>能级动态</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">解决方案</a>
+                <ul class="sub_nav">
+                    <li><a href="#"><span>校园节能监管</span></a></li>
+                    <li><a href="#"><span>医院节能监管</span></a></li>
+                    <li><a href="#"><span>公共建筑节能监管</span></a></li>
+                    <li><a href="#"><span>企业节能监管</span></a></li>
+                    <li><a href="#"><span>合同能源服务</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">成功案例</a>
+                <ul class="sub_nav">
+                    <li><a href="#"><span>校园节能监管</span></a></li>
+                    <li><a href="#"><span>医院节能监管</span></a></li>
+                    <li><a href="#"><span>公共建筑节能监管</span></a></li>
+                    <li><a href="#"><span>企业节能监管</span></a></li>
+                    <li><a href="#"><span>合同能源服务</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">服务与支持</a>
+                <ul class="sub_nav">
+                    <li><a href="#"><span>服务理念</span></a></li>
+                    <li><a href="#"><span>服务范围</span></a></li>
+                    <li><a href="#"><span>常见问题</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#">人才招聘</a></li>
+        </ul>
+        <div id="nav_underline"></div>
+    </nav>
+    <div id="slider">
+        <div id="slider_img">
+            <img src="images/slider1.jpg" alt="slider1" />
+        </div>
+        <button class="prev_img"></button>
+
+
+        <button class="next_img"></button>
+        <div class="text">
+            <h2>成功案例</h2>
+            <p>支持动态设置案列类别，类别支持图片设置及简介。每类别下有多条新闻，内容包含：文字、图片、视频等素材。</p>
+        </div>
+        <div class="text_bg"></div>
+        <div class="learn_more">
+            <button>了解更多</button>
+        </div>
+    </div>
+    <!-- InstanceBeginEditable name="EditWrapper" -->
+    <div class="wrapper clear">
+        <div class="home_list">
+            <ul>
+                <li><a href="#"><img src="images/home_list1.png" /></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><button>了解更多</button></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="images/home_list2.png" /></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><button>了解更多</button></li>
+            </ul>
+            <ul>
+                <li><a href="#"><img src="images/home_list3.png" /></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><button>了解更多</button></li>
+            </ul>
+
+        </div>
+        <div class="divider clear">
+        </div>
+
+        <div class="home_detail clear">
+            <section>
+                <article class="text">
+                    <h2>解决方案</h2>
+                    <p>支持动态设置案列类别，类别支持图片设置及简介。每类别下有多条新闻，内容包含：文字、图片、视频等素材。</p>
+                </article>
+                <article>
+                    <img src="images/home_detail1.png" alt="solution"/>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <img src="images/home_detail2.png" alt="support"/>
+                </article>
+
+                <article class="text">
+                    <h2>服务与支持</h2>
+                    <p>支持动态设置案列类别，类别支持图片设置及简介。每类别下有多条新闻，内容包含：文字、图片、视频等素材。</p>
+                </article>
+
+            </section>
+            <section>
+                <article class="text">
+                    <h2>关于我们</h2>
+                    <p>支持动态设置案列类别，类别支持图片设置及简介。每类别下有多条新闻，内容包含：文字、图片、视频等素材。</p>
+                </article>
+                <article>
+                    <img src="images/home_detail3.png" alt="about us"/>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <img src="images/home_detail4.png" alt="news"/>
+                </article>
+                <article class="text">
+                    <h2>新闻资讯</h2>
+                    <p>支持动态设置案列类别，类别支持图片设置及简介。每类别下有多条新闻，内容包含：文字、图片、视频等素材。</p>
+                </article>
+            </section>
+        </div>
+    </div>
+    <!-- InstanceEndEditable -->
+    <footer>
+        <section>
+            <h3 class="recent_p">Recent Posts</h3>
+            <ul>
+                <li><a href="#">Standard Post</a></li>
+                <li><a href="#">Layout and typography</a></li>
+                <li><a href="#">Gallery past format</a></li>
+                <li><a href="#">Many Categories</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3 class="recent_c">Recent Comments</h3>
+            <ul>
+                <li><a href="#">Nicolas on Post with comments</a></li>
+                <li><a href="#">Nicolas on Post with comments</a></li>
+                <li><a href="#">Nicolas on Post with comments</a></li>
+                <li><a href="#">cscs on Page with comments</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3 class="search_f">Search on the site</h3>
+            <p>Search for &#58</p>
+            <form action="#">
+                <p class="news_first_ul">
+                    <label for="search">
+                        <input type="search" id="search"/>
+                    </label>
+                  <br />
+                  <input type="submit" value="Search"/>
+                </p>
+            </form>
+        </section>
+
+    </footer>
+</div>
+
+<script type="text/javascript" src="lib/jquery/dist/jquery.min.js" ></script>
+<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="javascripts/js.js"></script>
+<script type="text/javascript" src="webapp.js"></script>
+<script type="text/javascript" src="aboutus.client.service.js"></script>
+<script type="text/javascript" src="aboutus.client.controller.js"></script>
+</body>
+<!-- InstanceEnd --></html>
